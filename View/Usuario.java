@@ -34,12 +34,14 @@ public class Usuario extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setName("Usuario"); // NOI18N
 
         jLabel1.setText("Login");
 
         jButton1.setText("Entrar");
 
         jTextField1.setName("JTF_Login"); // NOI18N
+        jTextField1.setRequestFocusEnabled(false);
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
