@@ -8,56 +8,26 @@ package com.mycompany.projetoaula753.Turma753Senac.Model;
  *
  * @author joelmir
  */
-public class Funcionario {
-    private String Rg;
-    private String Cpf;
-    private String DataNascimento;
-    private String Sexo;
-    private String EstadoCivil;
+public class Funcionario extends PessoaFisica {
+   
     private String Cargo;
-    private String Escolaridade;
-    private String EstadiCivil;
-    private String Nacionalidade;
-    private String Estado;
+    private String Beneficios;
+    private String Salario;
 
-    public String getRg() {
-        return Rg;
+    public String getBeneficios() {
+        return Beneficios;
     }
 
-    public void setRg(String Rg) {
-        this.Rg = Rg;
+    public void setBeneficios(String Beneficios) {
+        this.Beneficios = Beneficios;
     }
 
-    public String getCpf() {
-        return Cpf;
+    public String getSalario() {
+        return Salario;
     }
 
-    public void setCpf(String Cpf) {
-        this.Cpf = Cpf;
-    }
-
-    public String getDataNascimento() {
-        return DataNascimento;
-    }
-
-    public void setDataNascimento(String DataNascimento) {
-        this.DataNascimento = DataNascimento;
-    }
-
-    public String getSexo() {
-        return Sexo;
-    }
-
-    public void setSexo(String Sexo) {
-        this.Sexo = Sexo;
-    }
-
-    public String getEstadoCivil() {
-        return EstadoCivil;
-    }
-
-    public void setEstadoCivil(String EstadoCivil) {
-        this.EstadoCivil = EstadoCivil;
+    public void setSalario(String Salario) {
+        this.Salario = Salario;
     }
 
     public String getCargo() {
@@ -66,37 +36,5 @@ public class Funcionario {
 
     public void setCargo(String Cargo) {
         this.Cargo = Cargo;
-    }
-
-    public String getEscolaridade() {
-        return Escolaridade;
-    }
-
-    public void setEscolaridade(String Escolaridade) {
-        this.Escolaridade = Escolaridade;
-    }
-
-    public String getEstadiCivil() {
-        return EstadiCivil;
-    }
-
-    public void setEstadiCivil(String EstadiCivil) {
-        this.EstadiCivil = EstadiCivil;
-    }
-
-    public String getNacionalidade() {
-        return Nacionalidade;
-    }
-
-    public void setNacionalidade(String Nacionalidade) {
-        this.Nacionalidade = Nacionalidade;
-    }
-
-    public String getEstado() {
-        return Estado;
-    }
-
-    public void setEstado(String Estado) {
-        this.Estado = Estado;
     }
 }
