@@ -9,5 +9,5 @@ package com.mycompany.projetoaula753.Turma753Senac.Model;
  * @author joelmir
  */
 public class DepPessoal extends Empresa {
-    Funcionario funcionario = new Funcionario();
+    Funcionario Funcionario = new Funcionario();
 }
