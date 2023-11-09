@@ -12,12 +12,21 @@ import javax.swing.JOptionPane;
  */
 public class PessoaJuridica extends Pessoa {
     private long Cnpj;
-    private long NomeFantasia;
+    private long RazaoSocial;
     private long InscricaoEstadual;
     private long InscricaoMunicipal;
     private String Segmento;
     private String DataAbertura;
 
+    public long getRazaoSocial() {
+        return RazaoSocial;
+    }
+
+    public void setRazaoSocial(long RazaoSocial) {
+        this.RazaoSocial = RazaoSocial;
+    }
+
+    
     public String getSegmento() {
         return Segmento;
     }
@@ -40,14 +49,6 @@ public class PessoaJuridica extends Pessoa {
 
     public void setCnpj(long Cnpj) {
         this.Cnpj = Cnpj;
-    }
-
-    public long getNomeFantasia() {
-        return NomeFantasia;
-    }
-
-    public void setNomeFantasia(long NomeFantasia) {
-        this.NomeFantasia = NomeFantasia;
     }
 
     public long getInscricaoEstadual() {
