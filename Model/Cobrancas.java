@@ -1,5 +1,5 @@
 
-package com.mycompany.projetoaula753.Turma753Senac.Model;
+package com.mycompany.Turma753Senac.Model;
 
 /**
  *

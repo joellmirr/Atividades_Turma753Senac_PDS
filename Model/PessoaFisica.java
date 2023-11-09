@@ -4,6 +4,8 @@
  */
 package com.mycompany.Turma753Senac.Model;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author joelmir
@@ -109,4 +111,5 @@ public class PessoaFisica extends Pessoa {
         this.Etnia = Etnia;
     }
 
+    
 }
