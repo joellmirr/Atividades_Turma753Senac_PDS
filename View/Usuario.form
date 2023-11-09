@@ -45,19 +45,22 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="157" max="-2" attributes="0"/>
-                          <Component id="jB_Entrar" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jL_Senha" min="-2" max="-2" attributes="0"/>
                               <Component id="jL_Login" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jTF_Login" min="-2" pref="176" max="-2" attributes="0"/>
-                              <Component id="jTF_Senha" min="-2" pref="175" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jTF_Login" pref="176" max="32767" attributes="0"/>
+                              <Component id="jPasswordField_Senha" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="145" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jButton_Sair" min="-2" max="-2" attributes="0"/>
+                              <Component id="jB_Entrar" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -75,12 +78,14 @@
                   </Group>
                   <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jTF_Senha" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jL_Senha" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jPasswordField_Senha" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jB_Entrar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="101" max="32767" attributes="0"/>
+                  <EmptySpace pref="57" max="32767" attributes="0"/>
+                  <Component id="jButton_Sair" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -114,16 +119,12 @@
             <Property name="name" type="java.lang.String" value="" noResource="true"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTF_Senha">
+        <Component class="javax.swing.JPasswordField" name="jPasswordField_Senha">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton_Sair">
           <Properties>
-            <Property name="name" type="java.lang.String" value="JTF_Senha" noResource="true"/>
+            <Property name="text" type="java.lang.String" value="Sair"/>
           </Properties>
-          <AccessibilityProperties>
-            <Property name="AccessibleContext.accessibleName" type="java.lang.String" value=""/>
-          </AccessibilityProperties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTF_SenhaActionPerformed"/>
-          </Events>
         </Component>
       </SubComponents>
     </Container>

@@ -25,17 +25,17 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="256" max="32767" attributes="0"/>
+              <Component id="jPanel1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
+          <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -46,42 +46,101 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace max="-2" attributes="0"/>
+              <Group type="102" alignment="0" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel_Nome" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_CNPJ" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_RazaoSocial" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_InscricaoEstadual" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_InscricaoMunicipal" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_Telefone" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_Email" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_Endereco" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel_Nome" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_CNPJ" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_RazaoSocial" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_InscricaoEstadual" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_InscricaoMunicipal" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_Telefone" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_Email" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel_Endereco" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jLabel_Segmento" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTextField_Endereco" max="32767" attributes="0"/>
+                      <Component id="jTextField_Email" max="32767" attributes="0"/>
+                      <Component id="jTextField_Telefone" max="32767" attributes="0"/>
+                      <Component id="jTextField_InsMunicipal" max="32767" attributes="0"/>
+                      <Component id="jTextField_InsEstadual" max="32767" attributes="0"/>
+                      <Component id="jTextFielD_RazaoSocial" max="32767" attributes="0"/>
+                      <Component id="jTextField_Nome" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField1_CNPJ" alignment="1" max="32767" attributes="0"/>
+                      <Component id="jTextField_Segmento" pref="292" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="43" pref="43" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_Nome" pref="25" max="32767" attributes="0"/>
-                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_CNPJ" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_RazaoSocial" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_InscricaoEstadual" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_InscricaoMunicipal" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_Telefone" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_Email" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel_Endereco" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel_Nome" alignment="3" pref="60" max="32767" attributes="0"/>
+                      <Component id="jTextField_Nome" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel_CNPJ" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField1_CNPJ" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jLabel_RazaoSocial" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextFielD_RazaoSocial" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel_InscricaoEstadual" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_InsEstadual" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jLabel_InscricaoMunicipal" min="-2" max="-2" attributes="0"/>
+                      <Component id="jTextField_InsMunicipal" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
+                          <Component id="jLabel_Telefone" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jTextField_Telefone" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel_Email" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="jLabel_Endereco" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jTextField_Email" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jTextField_Endereco" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                          <Component id="jLabel_Segmento" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jTextField_Segmento" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -126,6 +185,29 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Endereco"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_Nome">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField1_CNPJ">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextFielD_RazaoSocial">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_InsEstadual">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_InsMunicipal">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_Telefone">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_Email">
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_Endereco">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_Segmento">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Segmento"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JTextField" name="jTextField_Segmento">
         </Component>
       </SubComponents>
     </Container>

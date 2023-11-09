@@ -31,7 +31,8 @@ public class Usuario extends javax.swing.JFrame {
         jB_Entrar = new javax.swing.JButton();
         jTF_Login = new javax.swing.JTextField();
         jL_Senha = new javax.swing.JLabel();
-        jTF_Senha = new javax.swing.JTextField();
+        jPasswordField_Senha = new javax.swing.JPasswordField();
+        jButton_Sair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("Usuario"); // NOI18N
@@ -56,12 +57,7 @@ public class Usuario extends javax.swing.JFrame {
         jL_Senha.setText("Senha");
         jL_Senha.setName(""); // NOI18N
 
-        jTF_Senha.setName("JTF_Senha"); // NOI18N
-        jTF_Senha.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTF_SenhaActionPerformed(evt);
-            }
-        });
+        jButton_Sair.setText("Sair");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -70,17 +66,19 @@ public class Usuario extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(157, 157, 157)
-                        .addComponent(jB_Entrar))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jL_Senha)
                             .addComponent(jL_Login))
                         .addGap(32, 32, 32)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTF_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTF_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jTF_Login, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
+                            .addComponent(jPasswordField_Senha)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(145, 145, 145)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton_Sair)
+                            .addComponent(jB_Entrar))))
                 .addContainerGap(122, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -92,14 +90,14 @@ public class Usuario extends javax.swing.JFrame {
                     .addComponent(jL_Login))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTF_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jL_Senha))
+                    .addComponent(jL_Senha)
+                    .addComponent(jPasswordField_Senha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jB_Entrar)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addComponent(jButton_Sair)
+                .addGap(16, 16, 16))
         );
-
-        jTF_Senha.getAccessibleContext().setAccessibleName("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -124,10 +122,6 @@ public class Usuario extends javax.swing.JFrame {
     private void jB_EntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB_EntrarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jB_EntrarActionPerformed
-
-    private void jTF_SenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTF_SenhaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTF_SenhaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -166,10 +160,11 @@ public class Usuario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jB_Entrar;
+    private javax.swing.JButton jButton_Sair;
     private javax.swing.JLabel jL_Login;
     private javax.swing.JLabel jL_Senha;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordField_Senha;
     private javax.swing.JTextField jTF_Login;
-    private javax.swing.JTextField jTF_Senha;
     // End of variables declaration//GEN-END:variables
 }
