@@ -57,12 +57,10 @@
                                       <Component id="jLabel_InscricaoEstadual" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="jLabel_InscricaoMunicipal" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jTextField_InsEstadual" max="32767" attributes="0"/>
-                                      <Component id="jTextField_Telefone" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jTextField_InsMunicipal" alignment="1" max="32767" attributes="0"/>
-                                      <Component id="jTextField_Email" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="jTextField_InsMunicipal" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -73,7 +71,7 @@
                                   <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="1" attributes="0">
-                                          <Component id="jTextField_Nome" pref="303" max="32767" attributes="0"/>
+                                          <Component id="jTextField_Nome" pref="476" max="32767" attributes="0"/>
                                           <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
                                       </Group>
                                       <Component id="jTextField1_CNPJ" max="32767" attributes="0"/>
@@ -81,11 +79,16 @@
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel_Telefone" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel_Telefone" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel_Segmento" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Component id="jTextField_Segmento" max="32767" attributes="0"/>
                                       <Component id="jTextField_Endereco" max="32767" attributes="0"/>
+                                      <Component id="jTextField_Email" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="jTextField_Telefone" alignment="0" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -101,15 +104,26 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jLabel_Email" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel_Endereco" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel_Segmento" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel_titulo" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                  <Component id="jButton_Cadastrar" min="-2" pref="109" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jButton_sair" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
+                  <Component id="jLabel_titulo" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel_Nome" alignment="3" pref="65" max="32767" attributes="0"/>
@@ -151,11 +165,21 @@
                       <Component id="jTextField_Endereco" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel_Segmento" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jTextField_Segmento" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jTextField_Segmento" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel_Segmento" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          <Component id="jButton_sair" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jButton_Cadastrar" min="-2" pref="48" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -223,6 +247,21 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField_Segmento">
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel_titulo">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cadastro Fornecedor:"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton_Cadastrar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cadastrar"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton_sair">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sair"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>

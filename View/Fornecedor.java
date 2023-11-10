@@ -45,6 +45,9 @@ public class Fornecedor extends javax.swing.JFrame {
         jTextField_Endereco = new javax.swing.JTextField();
         jLabel_Segmento = new javax.swing.JLabel();
         jTextField_Segmento = new javax.swing.JTextField();
+        jLabel_titulo = new javax.swing.JLabel();
+        jButton_Cadastrar = new javax.swing.JButton();
+        jButton_sair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fornecedor");
@@ -67,6 +70,12 @@ public class Fornecedor extends javax.swing.JFrame {
 
         jLabel_Segmento.setText("Segmento");
 
+        jLabel_titulo.setText("Cadastro Fornecedor:");
+
+        jButton_Cadastrar.setText("Cadastrar");
+
+        jButton_sair.setText("Sair");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -80,12 +89,10 @@ public class Fornecedor extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel_InscricaoEstadual)
                                     .addComponent(jLabel_InscricaoMunicipal))
-                                .addGap(37, 37, 37)
+                                .addGap(34, 34, 34)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextField_InsEstadual)
-                                    .addComponent(jTextField_Telefone)
-                                    .addComponent(jTextField_InsMunicipal, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jTextField_Email, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                    .addComponent(jTextField_InsMunicipal)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel_RazaoSocial)
@@ -93,16 +100,20 @@ public class Fornecedor extends javax.swing.JFrame {
                                 .addGap(40, 40, 40)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jTextField_Nome, javax.swing.GroupLayout.DEFAULT_SIZE, 303, Short.MAX_VALUE)
+                                        .addComponent(jTextField_Nome, javax.swing.GroupLayout.DEFAULT_SIZE, 476, Short.MAX_VALUE)
                                         .addGap(3, 3, 3))
                                     .addComponent(jTextField1_CNPJ)
                                     .addComponent(jTextFielD_RazaoSocial)))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel_Telefone)
-                                .addGap(64, 64, 64)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel_Telefone)
+                                    .addComponent(jLabel_Segmento))
+                                .addGap(54, 54, 54)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextField_Segmento)
-                                    .addComponent(jTextField_Endereco))))
+                                    .addComponent(jTextField_Endereco)
+                                    .addComponent(jTextField_Email)
+                                    .addComponent(jTextField_Telefone))))
                         .addGap(57, 57, 57))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel_CNPJ)
@@ -111,13 +122,22 @@ public class Fornecedor extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel_Email)
                     .addComponent(jLabel_Endereco)
-                    .addComponent(jLabel_Segmento))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel_titulo)))
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(92, 92, 92)
+                .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton_sair)
+                .addGap(73, 73, 73))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+                .addComponent(jLabel_titulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel_Nome, javax.swing.GroupLayout.DEFAULT_SIZE, 65, Short.MAX_VALUE)
                     .addComponent(jTextField_Nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -150,10 +170,17 @@ public class Fornecedor extends javax.swing.JFrame {
                     .addComponent(jLabel_Endereco)
                     .addComponent(jTextField_Endereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel_Segmento)
-                    .addComponent(jTextField_Segmento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(76, 76, 76))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField_Segmento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel_Segmento))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(39, 39, 39)
+                        .addComponent(jButton_sair))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -213,6 +240,8 @@ public class Fornecedor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton_Cadastrar;
+    private javax.swing.JButton jButton_sair;
     private javax.swing.JLabel jLabel_CNPJ;
     private javax.swing.JLabel jLabel_Email;
     private javax.swing.JLabel jLabel_Endereco;
@@ -222,6 +251,7 @@ public class Fornecedor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_RazaoSocial;
     private javax.swing.JLabel jLabel_Segmento;
     private javax.swing.JLabel jLabel_Telefone;
+    private javax.swing.JLabel jLabel_titulo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField jTextFielD_RazaoSocial;
     private javax.swing.JTextField jTextField1_CNPJ;
