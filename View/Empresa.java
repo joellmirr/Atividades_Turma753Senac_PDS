@@ -45,10 +45,12 @@ public class Empresa extends javax.swing.JFrame {
         jTextField_Endereco = new javax.swing.JTextField();
         jLabel_Segmento = new javax.swing.JLabel();
         jTextField_Segmento = new javax.swing.JTextField();
+        jButton_Cadastrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel_Nome.setText("Nome");
+        jLabel_Nome.setToolTipText("");
 
         jLabel_CNPJ.setText("CNPJ");
 
@@ -85,17 +87,17 @@ public class Empresa extends javax.swing.JFrame {
                             .addComponent(jLabel_Endereco)))
                     .addComponent(jLabel_Segmento))
                 .addGap(37, 37, 37)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField_Endereco)
-                    .addComponent(jTextField_Email)
-                    .addComponent(jTextField_Telefone)
-                    .addComponent(jTextField_InsMunicipal)
-                    .addComponent(jTextField_InsEstadual)
-                    .addComponent(jTextFielD_RazaoSocial)
-                    .addComponent(jTextField_Nome)
-                    .addComponent(jTextField1_CNPJ, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jTextField_Segmento, javax.swing.GroupLayout.DEFAULT_SIZE, 292, Short.MAX_VALUE))
-                .addGap(43, 43, 43))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jTextField_Endereco, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                    .addComponent(jTextField_Email, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField_Telefone, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField_InsMunicipal, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField_InsEstadual, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextFielD_RazaoSocial, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField1_CNPJ, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField_Nome, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextField_Segmento))
+                .addContainerGap(334, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,6 +149,8 @@ public class Empresa extends javax.swing.JFrame {
                 .addGap(12, 12, 12))
         );
 
+        jButton_Cadastrar.setText("Cadastra");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -155,13 +159,19 @@ public class Empresa extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(258, 258, 258)
+                .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(45, 45, 45))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addComponent(jButton_Cadastrar)
+                .addGap(43, 43, 43))
         );
 
         pack();
@@ -203,6 +213,7 @@ public class Empresa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton_Cadastrar;
     private javax.swing.JLabel jLabel_CNPJ;
     private javax.swing.JLabel jLabel_Email;
     private javax.swing.JLabel jLabel_Endereco;

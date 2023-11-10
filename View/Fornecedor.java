@@ -47,6 +47,7 @@ public class Fornecedor extends javax.swing.JFrame {
         jTextField_Segmento = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Fornecedor");
 
         jLabel_Nome.setText("Nome");
 

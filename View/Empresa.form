@@ -28,14 +28,21 @@
               <Component id="jPanel1" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="258" max="-2" attributes="0"/>
+              <Component id="jButton_Cadastrar" min="-2" pref="113" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" max="32767" attributes="0"/>
-              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="48" max="32767" attributes="0"/>
+              <Component id="jButton_Cadastrar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -64,18 +71,18 @@
                       <Component id="jLabel_Segmento" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jTextField_Endereco" max="32767" attributes="0"/>
-                      <Component id="jTextField_Email" max="32767" attributes="0"/>
-                      <Component id="jTextField_Telefone" max="32767" attributes="0"/>
-                      <Component id="jTextField_InsMunicipal" max="32767" attributes="0"/>
-                      <Component id="jTextField_InsEstadual" max="32767" attributes="0"/>
-                      <Component id="jTextFielD_RazaoSocial" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jTextField_Endereco" alignment="0" pref="298" max="32767" attributes="0"/>
+                      <Component id="jTextField_Email" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField_Telefone" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField_InsMunicipal" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField_InsEstadual" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextFielD_RazaoSocial" alignment="0" max="32767" attributes="0"/>
+                      <Component id="jTextField1_CNPJ" alignment="0" max="32767" attributes="0"/>
                       <Component id="jTextField_Nome" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jTextField1_CNPJ" alignment="1" max="32767" attributes="0"/>
-                      <Component id="jTextField_Segmento" pref="292" max="32767" attributes="0"/>
+                      <Component id="jTextField_Segmento" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace min="43" pref="43" max="-2" attributes="0"/>
+                  <EmptySpace pref="334" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -149,6 +156,7 @@
         <Component class="javax.swing.JLabel" name="jLabel_Nome">
           <Properties>
             <Property name="text" type="java.lang.String" value="Nome"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel_CNPJ">
@@ -211,5 +219,10 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JButton" name="jButton_Cadastrar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cadastra"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

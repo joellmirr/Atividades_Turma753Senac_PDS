@@ -35,6 +35,7 @@ public class Usuario extends javax.swing.JFrame {
         jButton_Sair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("LOGIN");
         setName("Usuario"); // NOI18N
 
         jL_Login.setText("Login");
