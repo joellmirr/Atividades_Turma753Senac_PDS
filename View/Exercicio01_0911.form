@@ -74,31 +74,25 @@
                                       <Component id="jTextField_Endereco" pref="254" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                                      <Component id="jButton_Cadastrar" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="jButton_Sair" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Group type="102" attributes="0">
-                                              <Component id="jComboBox_Categoria" min="-2" pref="99" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                              <Component id="jLabel_sexo" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                              <Component id="jRadioButton_masculino" min="-2" max="-2" attributes="0"/>
-                                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                                          </Group>
-                                          <Group type="102" alignment="1" attributes="0">
-                                              <Component id="jComboBox_ClubesDTiro" min="-2" pref="185" max="-2" attributes="0"/>
-                                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                                          </Group>
-                                      </Group>
-                                      <Component id="jRadioButton_feminino" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                                  <Component id="jButton_Cadastrar" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="jButton_Sair" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                                  <Component id="jComboBox_Categoria" min="-2" pref="99" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                  <Component id="jLabel_sexo" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                  <Component id="jRadioButton_masculino" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jRadioButton_feminino" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+                                  <Component id="jComboBox_ClubesDTiro" min="-2" pref="272" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -107,7 +101,7 @@
                           <Component id="jLabel_clubesDTiro" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="139" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>

@@ -27,18 +27,19 @@ public class Usuario extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jL_Login = new javax.swing.JLabel();
+        jL_login = new javax.swing.JLabel();
         jB_Entrar = new javax.swing.JButton();
         jTF_Login = new javax.swing.JTextField();
         jL_Senha = new javax.swing.JLabel();
         jPasswordField_Senha = new javax.swing.JPasswordField();
         jButton_Sair = new javax.swing.JButton();
+        jButton_cadastro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LOGIN");
         setName("Usuario"); // NOI18N
 
-        jL_Login.setText("Login");
+        jL_login.setText("Login");
 
         jB_Entrar.setText("Entrar");
         jB_Entrar.addActionListener(new java.awt.event.ActionListener() {
@@ -60,6 +61,8 @@ public class Usuario extends javax.swing.JFrame {
 
         jButton_Sair.setText("Sair");
 
+        jButton_cadastro.setText("Cadastro");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -70,7 +73,7 @@ public class Usuario extends javax.swing.JFrame {
                         .addGap(30, 30, 30)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jL_Senha)
-                            .addComponent(jL_Login))
+                            .addComponent(jL_login))
                         .addGap(32, 32, 32)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jTF_Login, javax.swing.GroupLayout.DEFAULT_SIZE, 176, Short.MAX_VALUE)
@@ -79,16 +82,21 @@ public class Usuario extends javax.swing.JFrame {
                         .addGap(145, 145, 145)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton_Sair)
-                            .addComponent(jB_Entrar))))
+                            .addComponent(jB_Entrar)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton_cadastro)))
                 .addContainerGap(122, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(62, 62, 62)
+                .addContainerGap()
+                .addComponent(jButton_cadastro)
+                .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTF_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jL_Login))
+                    .addComponent(jL_login))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jL_Senha)
@@ -162,8 +170,9 @@ public class Usuario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jB_Entrar;
     private javax.swing.JButton jButton_Sair;
-    private javax.swing.JLabel jL_Login;
+    private javax.swing.JButton jButton_cadastro;
     private javax.swing.JLabel jL_Senha;
+    private javax.swing.JLabel jL_login;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField jPasswordField_Senha;
     private javax.swing.JTextField jTF_Login;
