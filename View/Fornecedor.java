@@ -80,6 +80,11 @@ public class Fornecedor extends javax.swing.JFrame {
         jButton_Cadastrar.setText("Cadastrar");
 
         jButton_sair.setText("Sair");
+        jButton_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_sairActionPerformed(evt);
+            }
+        });
 
         jButton_Mostrar.setText("Mostrar");
         jButton_Mostrar.addActionListener(new java.awt.event.ActionListener() {
@@ -248,6 +253,12 @@ public class Fornecedor extends javax.swing.JFrame {
         jTextField_Endereco.setText("");
         jTextField_Segmento.setText("");
     }//GEN-LAST:event_jButton_limparActionPerformed
+
+    private void jButton_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sairActionPerformed
+        boolean isClosed = false;
+        // TODO add your handling code here:
+            setVisible(isClosed);
+    }//GEN-LAST:event_jButton_sairActionPerformed
 
     /**
      * @param args the command line arguments
