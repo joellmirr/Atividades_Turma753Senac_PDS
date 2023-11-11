@@ -11,22 +11,45 @@ import javax.swing.JOptionPane;
  * @author joelmir
  */
 public class PessoaJuridica extends Pessoa {
-    private long Cnpj;
-    private long RazaoSocial;
-    private long InscricaoEstadual;
-    private long InscricaoMunicipal;
+    private String Cnpj;
+    private String RazaoSocial;
+    private String InscricaoEstadual;
+    private String InscricaoMunicipal;
     private String Segmento;
     private String DataAbertura;
 
-    public long getRazaoSocial() {
+    public String getCnpj() {
+        return Cnpj;
+    }
+
+    public void setCnpj(String Cnpj) {
+        this.Cnpj = Cnpj;
+    }
+
+    public String getRazaoSocial() {
         return RazaoSocial;
     }
 
-    public void setRazaoSocial(long RazaoSocial) {
+    public void setRazaoSocial(String RazaoSocial) {
         this.RazaoSocial = RazaoSocial;
     }
 
-    
+    public String getInscricaoEstadual() {
+        return InscricaoEstadual;
+    }
+
+    public void setInscricaoEstadual(String InscricaoEstadual) {
+        this.InscricaoEstadual = InscricaoEstadual;
+    }
+
+    public String getInscricaoMunicipal() {
+        return InscricaoMunicipal;
+    }
+
+    public void setInscricaoMunicipal(String InscricaoMunicipal) {
+        this.InscricaoMunicipal = InscricaoMunicipal;
+    }
+
     public String getSegmento() {
         return Segmento;
     }
@@ -42,30 +65,6 @@ public class PessoaJuridica extends Pessoa {
     public void setDataAbertura(String DataAbertura) {
         this.DataAbertura = DataAbertura;
     }
-
-    public long getCnpj() {
-        return Cnpj;
-    }
-
-    public void setCnpj(long Cnpj) {
-        this.Cnpj = Cnpj;
-    }
-
-    public long getInscricaoEstadual() {
-        return InscricaoEstadual;
-    }
-
-    public void setInscricaoEstadual(long InscricaoEstadual) {
-        this.InscricaoEstadual = InscricaoEstadual;
-    }
-
-    public long getInscricaoMunicipal() {
-        return InscricaoMunicipal;
-    }
-
-    public void setInscricaoMunicipal(long InscricaoMunicipal) {
-        this.InscricaoMunicipal = InscricaoMunicipal;
-    }
     
     public static void main(String[] args) {
 
@@ -76,7 +75,7 @@ public class PessoaJuridica extends Pessoa {
         for (int i = 0; i < pessoa.length; i++) {
             pessoa[i] = new PessoaJuridica();
             pessoa[i].setNome(JOptionPane.showInputDialog("Informe o Nome: "));
-            pessoa[i].setCnpj(Long.parseLong(JOptionPane.showInputDialog("Informe o CNPJ:")));
+            pessoa[i].setCnpj(JOptionPane.showInputDialog("Informe o CNPJ:"));
         }
 
         for (int i = 0; i < TAM; i++) {
@@ -87,7 +86,7 @@ public class PessoaJuridica extends Pessoa {
         for(int i=0;i<Empresa.length;i++){
             Empresa[i] = new PessoaJuridica();
             Empresa[i].setNome(JOptionPane.showInputDialog("Informe Nome Empresa:"));
-            Empresa[i].setCnpj(Long.parseLong(JOptionPane.showInputDialog("Informe CNPJ:")));
+            Empresa[i].setCnpj(JOptionPane.showInputDialog("Informe CNPJ:"));
         }
 
     }

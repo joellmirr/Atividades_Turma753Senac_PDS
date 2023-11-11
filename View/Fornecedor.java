@@ -4,6 +4,9 @@
  */
 package com.mycompany.Turma753Senac.View;
 
+import com.mycompany.Turma753Senac.Model.PessoaJuridica;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author joelmir
@@ -48,6 +51,8 @@ public class Fornecedor extends javax.swing.JFrame {
         jLabel_titulo = new javax.swing.JLabel();
         jButton_Cadastrar = new javax.swing.JButton();
         jButton_sair = new javax.swing.JButton();
+        jButton_Mostrar = new javax.swing.JButton();
+        jButton_limpar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Fornecedor");
@@ -75,6 +80,20 @@ public class Fornecedor extends javax.swing.JFrame {
         jButton_Cadastrar.setText("Cadastrar");
 
         jButton_sair.setText("Sair");
+
+        jButton_Mostrar.setText("Mostrar");
+        jButton_Mostrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_MostrarActionPerformed(evt);
+            }
+        });
+
+        jButton_limpar.setText("Limpar");
+        jButton_limpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_limparActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -129,7 +148,11 @@ public class Fornecedor extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(92, 92, 92)
                 .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(85, 85, 85)
+                .addComponent(jButton_Mostrar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton_limpar)
+                .addGap(39, 39, 39)
                 .addComponent(jButton_sair)
                 .addGap(73, 73, 73))
         );
@@ -179,7 +202,10 @@ public class Fornecedor extends javax.swing.JFrame {
                         .addComponent(jButton_sair))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton_Mostrar)
+                            .addComponent(jButton_limpar))
                         .addContainerGap())))
         );
 
@@ -202,6 +228,26 @@ public class Fornecedor extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_MostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MostrarActionPerformed
+        com.mycompany.Turma753Senac.Model.PessoaJuridica f = this.MostraFornecedor();
+        JOptionPane.showMessageDialog(null,"Nome: "+f.getNome()+"\nCNPJ: "+f.getCnpj()+""
+                +"\nRazão Social: "+f.getRazaoSocial()+"\nInscrição Estadual: "+f.getInscricaoEstadual()+""
+                +"\nInscrição Municipal: "+f.getInscricaoMunicipal()+"\nTelefone: "+f.getTelefone()+"\n"
+                + "Email: "+f.getEmail()+"\nEndereco: "+f.getEndereco()+"\nSegmento: "+f.getSegmento());
+    }//GEN-LAST:event_jButton_MostrarActionPerformed
+
+    private void jButton_limparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_limparActionPerformed
+        jTextField_Nome.setText("");
+        jTextField1_CNPJ.setText("");
+        jTextFielD_RazaoSocial.setText("");
+        jTextField_InsEstadual.setText("");
+        jTextField_InsMunicipal.setText("");
+        jTextField_Telefone.setText("");
+        jTextField_Email.setText("");
+        jTextField_Endereco.setText("");
+        jTextField_Segmento.setText("");
+    }//GEN-LAST:event_jButton_limparActionPerformed
 
     /**
      * @param args the command line arguments
@@ -238,9 +284,27 @@ public class Fornecedor extends javax.swing.JFrame {
             }
         });
     }
+    public PessoaJuridica MostraFornecedor(){
+       com.mycompany.Turma753Senac.Model.PessoaJuridica f =  new com.mycompany.Turma753Senac.Model.PessoaJuridica();
+       
+       f.setNome(jTextField_Nome.getText());
+       f.setCnpj(jTextField1_CNPJ.getText());
+       f.setRazaoSocial(jTextFielD_RazaoSocial.getText());
+       f.setInscricaoEstadual(jTextField_InsEstadual.getText());
+       f.setInscricaoMunicipal(jTextField_InsMunicipal.getText());
+       f.setTelefone(jTextField_Telefone.getText());
+       f.setEmail(jTextField_Email.getText());
+       f.setEndereco(jTextField_Endereco.getText());
+       f.setSegmento(jTextField_Segmento.getText());
+       return f;
+        
+        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Cadastrar;
+    private javax.swing.JButton jButton_Mostrar;
+    private javax.swing.JButton jButton_limpar;
     private javax.swing.JButton jButton_sair;
     private javax.swing.JLabel jLabel_CNPJ;
     private javax.swing.JLabel jLabel_Email;
@@ -263,4 +327,6 @@ public class Fornecedor extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField_Segmento;
     private javax.swing.JTextField jTextField_Telefone;
     // End of variables declaration//GEN-END:variables
+
+    
 }

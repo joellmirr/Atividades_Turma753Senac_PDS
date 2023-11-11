@@ -53,12 +53,14 @@
                           <Group type="103" groupAlignment="1" attributes="0">
                               <Component id="jButton_sair" min="-2" max="-2" attributes="0"/>
                               <Group type="102" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="jButton_cliente" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="jButton_almoxarifado" alignment="0" pref="0" max="32767" attributes="0"/>
-                                      <Component id="jButton_empresa" alignment="0" pref="118" max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Component id="jButton_almoxarifado" min="-2" pref="108" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="jButton_empresa" pref="108" max="32767" attributes="0"/>
+                                          <Component id="jButton_cliente" max="32767" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                       <Component id="jButton_vendas" max="32767" attributes="0"/>
                                       <Component id="jButton_depPessoal" max="32767" attributes="0"/>
@@ -78,7 +80,7 @@
                           <Component id="jLabel_titulo" min="-2" pref="182" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="110" max="32767" attributes="0"/>
+                  <EmptySpace pref="143" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
