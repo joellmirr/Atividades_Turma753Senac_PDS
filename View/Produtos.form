@@ -77,15 +77,18 @@
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
-                          <Component id="jButton_cadastra" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
-                          <Component id="jButton_sair" min="-2" max="-2" attributes="0"/>
-                      </Group>
                       <Component id="jLabel_quantidade" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="267" max="32767" attributes="0"/>
+                  <EmptySpace pref="307" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
+                  <Component id="jButton_cadastra" min="-2" pref="100" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="95" max="-2" attributes="0"/>
+                  <Component id="jButton_limpar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jButton_sair" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -119,12 +122,18 @@
                       <Component id="jScrollPane_descricao" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel_descricao" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="44" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jButton_cadastra" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButton_sair" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="33" pref="104" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton_sair" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton_limpar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jButton_cadastra" min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -192,6 +201,11 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField_quantidade">
+        </Component>
+        <Component class="javax.swing.JButton" name="jButton_limpar">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="LImpar"/>
+          </Properties>
         </Component>
       </SubComponents>
     </Container>
