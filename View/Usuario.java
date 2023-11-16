@@ -33,7 +33,6 @@ public class Usuario extends javax.swing.JFrame {
         jL_Senha = new javax.swing.JLabel();
         jPasswordField_Senha = new javax.swing.JPasswordField();
         jButton_Sair = new javax.swing.JButton();
-        jButton_cadastro = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LOGIN");
@@ -60,8 +59,11 @@ public class Usuario extends javax.swing.JFrame {
         jL_Senha.setName(""); // NOI18N
 
         jButton_Sair.setText("Sair");
-
-        jButton_cadastro.setText("Cadastro");
+        jButton_Sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_SairActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -82,18 +84,13 @@ public class Usuario extends javax.swing.JFrame {
                         .addGap(145, 145, 145)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton_Sair)
-                            .addComponent(jB_Entrar)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton_cadastro)))
+                            .addComponent(jB_Entrar))))
                 .addContainerGap(122, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton_cadastro)
-                .addGap(29, 29, 29)
+                .addGap(62, 62, 62)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTF_Login, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jL_login))
@@ -130,7 +127,14 @@ public class Usuario extends javax.swing.JFrame {
 
     private void jB_EntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jB_EntrarActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jB_EntrarActionPerformed
+
+    private void jButton_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_SairActionPerformed
+        boolean isClosed = false;
+        // TODO add your handling code here:
+        setVisible(isClosed);
+    }//GEN-LAST:event_jButton_SairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -170,7 +174,6 @@ public class Usuario extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jB_Entrar;
     private javax.swing.JButton jButton_Sair;
-    private javax.swing.JButton jButton_cadastro;
     private javax.swing.JLabel jL_Senha;
     private javax.swing.JLabel jL_login;
     private javax.swing.JPanel jPanel1;

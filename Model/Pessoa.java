@@ -13,6 +13,10 @@ public class Pessoa {
     private String Endereco;
     private String Telefone;
     private String Email;
+    private String NomeUsuario;
+    private String Senha;
+    private String ConfirmaSenha;
+    
 
     public String getNome() {
         return Nome;
@@ -44,6 +48,30 @@ public class Pessoa {
 
     public void setEmail(String Email) {
         this.Email = Email;
+    }
+
+    public String getNomeUsuario() {
+        return NomeUsuario;
+    }
+
+    public void setNomeUsuario(String NomeUsuario) {
+        this.NomeUsuario = NomeUsuario;
+    }
+
+    public String getSenha() {
+        return Senha;
+    }
+
+    public void setSenha(String Senha) {
+        this.Senha = Senha;
+    }
+
+    public String getConfirmaSenha() {
+        return ConfirmaSenha;
+    }
+
+    public void setConfirmaSenha(String ConfirmaSenha) {
+        this.ConfirmaSenha = ConfirmaSenha;
     }
     
 }

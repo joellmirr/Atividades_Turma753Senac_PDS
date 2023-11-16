@@ -5,6 +5,7 @@
 package com.mycompany.Turma753Senac.View;
 
 import com.mycompany.Turma753Senac.Model.PessoaJuridica;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -78,6 +79,11 @@ public class Fornecedor extends javax.swing.JFrame {
         jLabel_titulo.setText("Cadastro Fornecedor:");
 
         jButton_Cadastrar.setText("Cadastrar");
+        jButton_Cadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_CadastrarActionPerformed(evt);
+            }
+        });
 
         jButton_sair.setText("Sair");
         jButton_sair.addActionListener(new java.awt.event.ActionListener() {
@@ -259,6 +265,24 @@ public class Fornecedor extends javax.swing.JFrame {
         // TODO add your handling code here:
             setVisible(isClosed);
     }//GEN-LAST:event_jButton_sairActionPerformed
+
+    private void jButton_CadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CadastrarActionPerformed
+        // TODO add your handling code here:
+        com.mycompany.Turma753Senac.Model.PessoaJuridica f = new com.mycompany.Turma753Senac.Model.PessoaJuridica();
+        ArrayList<PessoaJuridica> ListaF = new ArrayList<>();
+        
+        f.setNome(jTextField_Nome.getText());
+        f.setCnpj(jTextField1_CNPJ.getText());
+        f.setRazaoSocial(jTextFielD_RazaoSocial.getText());
+        f.setInscricaoEstadual(jTextField_InsEstadual.getText());
+        f.setInscricaoMunicipal(jTextField_InsMunicipal.getText());
+        f.setTelefone(jTextField_Telefone.getText());
+        f.setEmail(jTextField_Email.getText());
+        f.setEndereco(jTextField_Endereco.getText());
+        f.setSegmento(jTextField_Segmento.getText());
+        
+        ListaF.add(f);
+    }//GEN-LAST:event_jButton_CadastrarActionPerformed
 
     /**
      * @param args the command line arguments

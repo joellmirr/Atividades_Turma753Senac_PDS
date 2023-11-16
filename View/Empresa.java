@@ -4,6 +4,9 @@
  */
 package com.mycompany.Turma753Senac.View;
 
+import com.mycompany.Turma753Senac.Model.PessoaJuridica;
+import java.util.ArrayList;
+
 /**
  *
  * @author joelmir
@@ -48,6 +51,7 @@ public class Empresa extends javax.swing.JFrame {
         jLabel_Titulo = new javax.swing.JLabel();
         jButton_Cadastrar = new javax.swing.JButton();
         jButton_sair = new javax.swing.JButton();
+        jButton_limpar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -161,8 +165,25 @@ public class Empresa extends javax.swing.JFrame {
         );
 
         jButton_Cadastrar.setText("Cadastra");
+        jButton_Cadastrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_CadastrarActionPerformed(evt);
+            }
+        });
 
         jButton_sair.setText("Sair");
+        jButton_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_sairActionPerformed(evt);
+            }
+        });
+
+        jButton_limpar.setText("Limpar");
+        jButton_limpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_limparActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -175,7 +196,9 @@ public class Empresa extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(86, 86, 86)
                 .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(190, 190, 190)
+                .addGap(51, 51, 51)
+                .addComponent(jButton_limpar)
+                .addGap(58, 58, 58)
                 .addComponent(jButton_sair)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -186,13 +209,52 @@ public class Empresa extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton_Cadastrar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton_limpar))
                     .addComponent(jButton_sair, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(19, 19, 19))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_limparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_limparActionPerformed
+        // TODO add your handling code here:
+        jTextField_Nome.setText("");
+        jTextField1_CNPJ.setText("");
+        jTextFielD_RazaoSocial.setText("");
+        jTextField_InsEstadual.setText("");
+        jTextField_InsMunicipal.setText("");
+        jTextField_Telefone.setText("");
+        jTextField_Email.setText("");
+        jTextField_Endereco.setText("");
+        jTextField_Segmento.setText("");
+    }//GEN-LAST:event_jButton_limparActionPerformed
+
+    private void jButton_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sairActionPerformed
+        // TODO add your handling code here:
+        boolean isClosed = false;
+        setVisible(isClosed);
+    }//GEN-LAST:event_jButton_sairActionPerformed
+
+    private void jButton_CadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_CadastrarActionPerformed
+        // TODO add your handling code here:
+        com.mycompany.Turma753Senac.Model.PessoaJuridica e = new com.mycompany.Turma753Senac.Model.PessoaJuridica();
+        ArrayList<PessoaJuridica> ListaE = new ArrayList<>();
+        
+        e.setNome(jTextField_Nome.getText());
+        e.setCnpj(jTextField1_CNPJ.getText());
+        e.setRazaoSocial(jTextFielD_RazaoSocial.getText());
+        e.setInscricaoEstadual(jTextField_InsEstadual.getText());
+        e.setInscricaoMunicipal(jTextField_InsMunicipal.getText());
+        e.setTelefone(jTextField_Telefone.getText());
+        e.setEmail(jTextField_Email.getText());
+        e.setEndereco(jTextField_Endereco.getText());
+        e.setSegmento(jTextField_Segmento.getText());
+        
+        ListaE.add(e);
+    }//GEN-LAST:event_jButton_CadastrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -231,6 +293,7 @@ public class Empresa extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton_Cadastrar;
+    private javax.swing.JButton jButton_limpar;
     private javax.swing.JButton jButton_sair;
     private javax.swing.JLabel jLabel_CNPJ;
     private javax.swing.JLabel jLabel_Email;

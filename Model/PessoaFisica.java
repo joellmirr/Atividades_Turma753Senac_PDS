@@ -5,6 +5,7 @@
 package com.mycompany.Turma753Senac.Model;
 
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 
 /**
  *
@@ -109,6 +110,22 @@ public class PessoaFisica extends Pessoa {
 
     public void setEtnia(String Etnia) {
         this.Etnia = Etnia;
+    }
+
+    public void setSenha(JPasswordField jPasswordField_senha) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setSenha(char[] password) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setConfirmaSenha(JPasswordField jPasswordField_confirmeSenha) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public void setConfirmaSenha(char[] password) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     

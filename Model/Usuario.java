@@ -11,6 +11,7 @@ package com.mycompany.Turma753Senac.Model;
 public class Usuario extends Pessoa {
     private String Login;
     private String Senha;
+    private String ConfirmSenha;
 
     public String getLogin() {
         return Login;
@@ -26,6 +27,14 @@ public class Usuario extends Pessoa {
 
     public void setSenha(String Senha) {
         this.Senha = Senha;
+    }
+
+    public String getConfirmSenha() {
+        return ConfirmSenha;
+    }
+
+    public void setConfirmSenha(String ConfirmSenha) {
+        this.ConfirmSenha = ConfirmSenha;
     }
     
 }

@@ -4,16 +4,19 @@
  */
 package com.mycompany.Turma753Senac.View;
 
+import java.util.ArrayList;
+import com.mycompany.Turma753Senac.Model.Produtos;
+
 /**
  *
  * @author joelmir
  */
-public class Produtos extends javax.swing.JFrame {
+public class Produto extends javax.swing.JFrame {
 
     /**
      * Creates new form Produtos
      */
-    public Produtos() {
+    public Produto() {
         initComponents();
     }
 
@@ -34,7 +37,7 @@ public class Produtos extends javax.swing.JFrame {
         jTextField_codigo = new javax.swing.JTextField();
         jLabel_descricao = new javax.swing.JLabel();
         jScrollPane_descricao = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jTextArea_descricao = new javax.swing.JTextArea();
         jButton_cadastra = new javax.swing.JButton();
         jButton_sair = new javax.swing.JButton();
         jLabel_valor = new javax.swing.JLabel();
@@ -53,19 +56,34 @@ public class Produtos extends javax.swing.JFrame {
 
         jLabel_descricao.setText("Descriçãp");
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane_descricao.setViewportView(jTextArea1);
+        jTextArea_descricao.setColumns(20);
+        jTextArea_descricao.setRows(5);
+        jScrollPane_descricao.setViewportView(jTextArea_descricao);
 
         jButton_cadastra.setText("Cadatrar");
+        jButton_cadastra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_cadastraActionPerformed(evt);
+            }
+        });
 
         jButton_sair.setText("Sair");
+        jButton_sair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_sairActionPerformed(evt);
+            }
+        });
 
         jLabel_valor.setText("Valor");
 
         jLabel_quantidade.setText("Quantidade");
 
         jButton_limpar.setText("LImpar");
+        jButton_limpar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_limparActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -161,6 +179,35 @@ public class Produtos extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton_sairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_sairActionPerformed
+        boolean isClosed = false;
+        // TODO add your handling code here:
+        setVisible(isClosed);
+    }//GEN-LAST:event_jButton_sairActionPerformed
+
+    private void jButton_limparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_limparActionPerformed
+        // TODO add your handling code here:
+        jTextField_codigo.setText("");
+        jTextField_nome.setText("");
+        jTextField_valor.setText("");
+        jTextField_quantidade.setText("");
+        jTextArea_descricao.setText("");
+    }//GEN-LAST:event_jButton_limparActionPerformed
+
+    private void jButton_cadastraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_cadastraActionPerformed
+        // TODO add your handling code here:
+        com.mycompany.Turma753Senac.Model.Produtos p = new com.mycompany.Turma753Senac.Model.Produtos();
+        ArrayList<Produtos> ListaP = new ArrayList<>();
+        
+        p.setCodigo(jTextField_codigo.getText());
+        p.setNomePro(jTextField_nome.getText());
+        p.setValor(jTextField_valor.getText());
+        p.setQuantidade(jTextField_quantidade.getText());
+        p.setDescrição(jTextArea_descricao.getText());
+        
+        ListaP.add(p);
+    }//GEN-LAST:event_jButton_cadastraActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -191,7 +238,7 @@ public class Produtos extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Produtos().setVisible(true);
+                new Produto().setVisible(true);
             }
         });
     }
@@ -208,7 +255,7 @@ public class Produtos extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel_valor;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane_descricao;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea_descricao;
     private javax.swing.JTextField jTextField_codigo;
     private javax.swing.JTextField jTextField_nome;
     private javax.swing.JTextField jTextField_quantidade;
