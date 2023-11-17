@@ -242,6 +242,7 @@ public class Fornecedor extends javax.swing.JFrame {
 
     private void jButton_MostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_MostrarActionPerformed
         com.mycompany.Turma753Senac.Model.PessoaJuridica f = this.MostraFornecedor();
+        
         JOptionPane.showMessageDialog(null,"Nome: "+f.getNome()+"\nCNPJ: "+f.getCnpj()+""
                 +"\nRazão Social: "+f.getRazaoSocial()+"\nInscrição Estadual: "+f.getInscricaoEstadual()+""
                 +"\nInscrição Municipal: "+f.getInscricaoMunicipal()+"\nTelefone: "+f.getTelefone()+"\n"
