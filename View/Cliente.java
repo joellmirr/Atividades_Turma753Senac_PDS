@@ -325,6 +325,7 @@ public class Cliente extends javax.swing.JFrame {
         c.setProfissao(jTextField_profissao.getText());
         c.setSenha(jPasswordField_senha.getPassword());
         c.setConfirmaSenha(jPasswordField_confirmeSenha.getPassword());
+        //c.setGenero(jComboBox_genero);
         
         listaC.add(c);
         
