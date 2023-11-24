@@ -12,9 +12,10 @@ create  table Telefone(
 	IdTel int not null primary key auto_increment,
 	Telefone int(9),
 	IdCliente int not null
-);
+)engine=InnoDB;
 
 insert  into Telefone(IdTel,Telefone,IdCliente) values(1,629999,1);
+alter table Telefone add foreign key(IdCliente) references Cliente(IdCliente);
 
 create table ContaCorrente(
 	IdCC int not null primary key auto_increment,
@@ -22,9 +23,11 @@ create table ContaCorrente(
 	Agencia varchar(10) not null,
 	NomeBanco varchar(100) not null,
 	IdCliente int not null
-);
+)engine=InnoDB;
 
 insert into ContaCorrente(IdCC,NumConta,Agencia,NomeBanco,IdCliente) values(1,'8573','8888','Itau',1);
+
+alter table contacorrente add foreign key(IdCliente) references Cliente(IdCliente);
 
 #---------------------------------------------------------------------------------------------------------------------
 
@@ -37,13 +40,15 @@ create table Empresa(
 	InsMunicipal varchar(50) not null,
 	Email varchar(20) not null,
 	Segmento varchar(20) not null
-);
+)engine=InnoDB;
 
 create table TelefoneEmpresa(
 	IdTelefone int not null primary key auto_increment,
 	Telefone int(9) not null,
 	IdEmpresa int not null
-);
+)engine=InnoDB;
+
+alter table telefoneempresa  add foreign key(IdEmpresa) references Empresa(IdEmpresa);
 
 create  table EnderecoEmpresa(
 	IdEndereco int not null primary key auto_increment,
@@ -52,4 +57,27 @@ create  table EnderecoEmpresa(
 	Bairro varchar(50) not null,
 	Complemento varchar(50) not null,
 	IdEmpresa int not null
-);
+)engine=InnoDB;
+
+alter table enderecoempresa add foreign key(IdEmpresa) references Empresa(IdEmpresa);
+#-----------------------------------------------------------------------------------------------------------------------------
+
+create table Funcionario(
+	IdFuncionario int not null primary key auto_increment,
+	Nome varchar(20) not null,
+	Enderece varchar(20) not null,
+	Conplemento varchar(20) not null,
+	Bairro varchar(20) not null,
+	Cidade varchar(20) not null,
+	Estado varchar(20) not null,
+	CEP int(8) not null,
+	CPF varchar(11) not null,
+	CTPS varchar(10) not null,
+	DataNascimento date not null
+)engine=InnoDB;
+
+create table Funcao(
+	IdFuncao int not null primary key auto_increment,
+	DescricaoFuncao varchar(20) not null,
+	IdFuncionario int not null
+)engine=InnoDB;

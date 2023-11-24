@@ -325,7 +325,7 @@ public class Cliente extends javax.swing.JFrame {
         c.setProfissao(jTextField_profissao.getText());
         c.setSenha(jPasswordField_senha.getPassword());
         c.setConfirmaSenha(jPasswordField_confirmeSenha.getPassword());
-        //c.setGenero(jComboBox_genero);
+        c.setGenero((String) jComboBox_genero.getSelectedItem());
         
         listaC.add(c);
         
@@ -390,6 +390,7 @@ public class Cliente extends javax.swing.JFrame {
         cc.setProfissao(jTextField_profissao.getText());
         cc.setSenha(jPasswordField_senha.getPassword());
         cc.setConfirmaSenha(jPasswordField_confirmeSenha.getPassword());
+        cc.setGenero((String) jComboBox_genero.getSelectedItem());
         return cc;
     }
     
