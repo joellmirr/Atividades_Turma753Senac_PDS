@@ -1,12 +1,13 @@
 create table Cliente(
 	IdCliente int not null primary key auto_increment,
 	Nome varchar(20) not null,
-	Cpf varchar(11) not null,
+	Indentidade int(10) not null,
+	Cpf int(11) not null,
 	email varchar(20) not null,
 	Endereco varchar(250) not null	
 );
 
-insert into cliente(Nome,Cpf,Email,Endereco) values('Joelmir','036017','jo.ooo','GraValley'); 
+insert into cliente(Nome,Indentidade,Cpf,Email,Endereco) values('Joelmir','876988','036017','jo.ooo','GraValley'); 
 
 create  table Telefone(
 	IdTel int not null primary key auto_increment,
@@ -81,3 +82,12 @@ create table Funcao(
 	DescricaoFuncao varchar(20) not null,
 	IdFuncionario int not null
 )engine=InnoDB;
+
+create table TesteCliente(
+	idTesteCliente int not null primary key auto_increment,
+	Indentidade int not null,
+	CPF int not null,
+	email varchar(50) not null,
+	Endereco varchar(100) not null
+)engine=InnoDB;
+update testecliente set Nome='Joelmir G',email='jo.olive0@gmail.com' where idTesteCliente='1'
